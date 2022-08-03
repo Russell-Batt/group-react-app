@@ -1,0 +1,13 @@
+.social-media a{
+    margin: 0.5rem;
+    color: black;
+}
+
+.dark-mode a {
+    color: white
+}
+
+.icon{
+    margin-top: 0.75rem;
+    font-size: 30px;
+}

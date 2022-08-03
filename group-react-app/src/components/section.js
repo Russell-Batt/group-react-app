@@ -1,15 +1,13 @@
 import './section.css'
 
 function Section(props) {
-    const {title, paragraph, image} =props
-    
+    const {title, paragraph, image, darkMode} = props;
     
     return(
-        <div class="section">
-            <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
+        <div className={`section ${darkMode && 'dark-mode'}`}>
             <h1>{title}</h1>
             <p>{paragraph}</p>
-            <img class="image" src={image} alt="" />
+            <img className="image" src={image} alt="" />
         </div>
     )
 }

@@ -1,16 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import './social-media.css'
 
-// import { fa } from '@fortawesome/free-solid-svg-icons'
+function SocialMedia(props) {
+    const {darkMode, setDarkMode} = props
 
-function SocialMedia() {
     return(
-        <div>
-            <a href="facebook"><FontAwesomeIcon icon={faFacebook} /></a>
-            {/* <a href="twitter"><FontAwesomeIcon icon={faFacebook}</i></a>
-            <a href="instagram"><<FontAwesomeIcon icon={faFacebook}</a>
-            <a href="linkedin"><i className="fa fa-linkedin"></i></a> */}
-            
+        <div className={`social-media ${darkMode && 'dark-mode'}`}>
+            <a href="facebook"><FontAwesomeIcon icon={faFacebook} className="icon" /></a>
+            <a href="twitter"><FontAwesomeIcon icon={faTwitter} className="icon" /></a>
+            <a href="instagram"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+            <a href="linkedin"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>   
         </div>
     )
 }

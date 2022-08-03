@@ -1,11 +1,16 @@
 import Navbar from "./navbar";
 import "./header.css"
-function Header () {
+
+function Header (props) {
+    const {darkMode, setDarkMode} = props
+    
     return (
-        <div class="header">
-            <a class="logo" href="">logo</a>
+        <div className="header">
+            <a className="logo" href="">logo</a>
             
             <Navbar />
+
+            <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
 
         </div>
     )
