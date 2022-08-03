@@ -3,7 +3,7 @@ import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/fre
 import './social-media.css'
 
 function SocialMedia(props) {
-    const {darkMode, setDarkMode} = props
+    const {darkMode} = props
 
     return(
         <div className={`social-media ${darkMode && 'dark-mode'}`}>

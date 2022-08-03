@@ -7,11 +7,8 @@ function Header (props) {
     return (
         <div className="header">
             <a className="logo" href="">logo</a>
-            
             <Navbar />
-
             <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
-
         </div>
     )
 }

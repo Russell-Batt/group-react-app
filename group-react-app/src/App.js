@@ -13,8 +13,8 @@ function App() {
   return (
     <div className={`App ${darkMode && 'dark-mode'}`}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
-      <Section darkMode={darkMode} setDarkMode={setDarkMode} title={title} paragraph={paragraph} image={image}/>
-      <Footer darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Section darkMode={darkMode} title={title} paragraph={paragraph} image={image}/>
+      <Footer darkMode={darkMode}/>
     </div>
   );
 }
